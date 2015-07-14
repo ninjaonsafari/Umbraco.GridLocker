@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.GridLocker.Web.UI", "Umbraco.GridLocker.Web.UI\Umbraco.GridLocker.Web.UI.csproj", "{1567C45B-DD89-4F50-93B3-FBA2E24ACEC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E9EB2FEE-017A-4402-BCE7-20C84ED02D76}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1567C45B-DD89-4F50-93B3-FBA2E24ACEC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1567C45B-DD89-4F50-93B3-FBA2E24ACEC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1567C45B-DD89-4F50-93B3-FBA2E24ACEC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1567C45B-DD89-4F50-93B3-FBA2E24ACEC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
