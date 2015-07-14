@@ -1,0 +1,21 @@
+{
+  "name": "Umbraco.GridLocker",
+  "description": "Umbraco.GridLocker",
+  "version": "0.6.1",
+  "author": {
+    "name": "ninjaonsafari",
+    "url": "https://github.com/ninjaonsafari"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-umbraco-package": "0.0.6",
+    "load-grunt-tasks": "^3.2.0"
+  }
+}

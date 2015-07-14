@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <info>
+    <package>
+      <name>Umbraco.GridLocker</name>
+      <version>1.0.0.0</version>
+      <license url="http://opensource.org/licenses/MIT">MIT</license>
+      <url>https://github.com/ninjaonsafari/Umbraco.GridLocker</url>
+      <requirements>
+        <major>0</major>
+        <minor>0</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>ninjaonsafari</name>
+      <website>https://github.com/ninjaonsafari</website>
+    </author>
+    <readme><![CDATA[]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages>
+  </Languages>
+  <DataTypes />
+  <control />
+  <Actions/>
+  <files>
+  	
+  	<file>
+      <guid>dadf8b6f-de2d-822b-d98d-b8307d9f81ec.manifest</guid>
+      <orgPath>/App_PLugins/Umbraco.GridLocker</orgPath>
+      <orgName>package.manifest</orgName>
+    </file>
+	
+  	<file>
+      <guid>7b509802-288c-854b-b609-b2831ca4d577.js</guid>
+      <orgPath>/App_PLugins/Umbraco.GridLocker</orgPath>
+      <orgName>Umbraco.GridLocker.js</orgName>
+    </file>
+	
+  </files>
+</umbPackage>
