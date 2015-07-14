@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Umbraco.GridLocker.Web.UI")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Package for Umbraco which locks the grid by a certain doctype and user.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Umbraco.GridLocker.Web.UI")]
