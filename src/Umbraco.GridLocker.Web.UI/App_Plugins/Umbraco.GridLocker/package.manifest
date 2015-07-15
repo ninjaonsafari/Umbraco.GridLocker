@@ -9,14 +9,15 @@
 			prevalues: {
 				fields: [{
 					label: "Usernames",
-					description: "usernames comma separated",
+					description: "Select users which are allowed to edit the grid.",
 					key: "allowedUsers",
-					view: "textstring"
+					view: "~/App_Plugins/Umbraco.GridLocker/prevalueEditors/Umbraco.GridLocker.UserPicker.html"
 				}]
 			}
 		}
 	],
 	"javascript" : [
-		'~/App_Plugins/Umbraco.GridLocker/Umbraco.GridLocker.js'
+		'~/App_Plugins/Umbraco.GridLocker/Umbraco.GridLocker.js',
+		'~/App_Plugins/Umbraco.GridLocker/prevalueEditors/Umbraco.GridLocker.UserPicker.controller.js'
 	]
 }

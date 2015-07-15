@@ -235,6 +235,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\Umbraco.GridLocker\prevalueEditors\Umbraco.GridLocker.UserPicker.controller.js" />
     <Content Include="App_Plugins\Umbraco.GridLocker\Umbraco.GridLocker.js" />
     <Content Include="packages.config" />
     <Content Include="Views\Web.config" />
@@ -266,6 +267,7 @@
     <Content Include="App_Plugins\Umbraco.GridLocker\package.manifest" />
     <Content Include="App_Plugins\Umbraco.GridLocker\Umbraco.GridLocker.html" />
     <Content Include="App_Plugins\Umbraco.GridLocker\assets\Umbraco.GridLocker.css" />
+    <Content Include="App_Plugins\Umbraco.GridLocker\prevalueEditors\Umbraco.GridLocker.UserPicker.html" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

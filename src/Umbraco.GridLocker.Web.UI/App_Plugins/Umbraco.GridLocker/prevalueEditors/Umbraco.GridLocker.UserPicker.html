@@ -1,0 +1,6 @@
+﻿<div ng-controller="Umbraco.GridLocker.UserPicker">
+	<div ng-repeat="user in users">
+		<input type="checkbox" value="{{user.name}}" ng-click="toggle(user.name)" ng-checked="checked.indexOf(user.name) > -1"/>
+		{{user.name}}
+	</div>
+</div>

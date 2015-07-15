@@ -37,6 +37,8 @@
 			unlockGrid();
 		});
 
+		console.log($scope.model.config)
+
 		if ($scope.model.config && $scope.model.config.allowedUsers && $scope.model.config.allowedUsers != "") {
 			allowedUsers = $scope.model.config.allowedUsers;
 		}
