@@ -264,6 +264,8 @@
     <Content Include="Config\applications.config" />
     <Content Include="Config\404handlers.config" />
     <Content Include="App_Plugins\Umbraco.GridLocker\package.manifest" />
+    <Content Include="App_Plugins\Umbraco.GridLocker\Umbraco.GridLocker.html" />
+    <Content Include="App_Plugins\Umbraco.GridLocker\assets\Umbraco.GridLocker.css" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -279,6 +281,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Umbraco.GridLocker.Web\Umbraco.GridLocker.Web.csproj">
+      <Project>{84331a97-8d1c-41a4-ae2e-748c8dd1917a}</Project>
+      <Name>Umbraco.GridLocker.Web</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

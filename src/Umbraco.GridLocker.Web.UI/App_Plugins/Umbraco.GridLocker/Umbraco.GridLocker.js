@@ -1,21 +1,47 @@
-﻿app.run(['$rootScope', 'authResource', 'dataTypeResource', '$q', 'eventsService', '$routeParams', 'contentResource', function ($rootScope, authResource, dataTypeResource, $q, eventsService, $routeParams, contentResource) {
-	var nodeId;
+﻿angular.module("umbraco").controller("Umbraco.GridLocker",
+	function ($scope, assetsService, $http, $timeout, editorState, $rootScope, authResource) {
+		var stylesheet = "/App_Plugins/Umbraco.GridLocker/assets/Umbraco.GridLocker.css",
+			editorAlias = "GridLocker",
+			allowedUsers = ["admin"];
 
-	$rootScope.$on('$viewContentLoaded', function () {
-		if ($routeParams.section === "content" && $routeParams.id) {
-			nodeId = $routeParams.id;
-			contentResource.getById(nodeId).then(function (current) {
-				$("#brickwall-grid-locker").remove();
-				if (current.contentTypeAlias === "Frontpage") {
-					authResource.getCurrentUser().then(function (user) {
-						if (user.userType != "admin") {
-							$("<style id='brickwall-grid-locker' type='text/css'> .templates-preview, .cell-tools-add, .cell-tools, .row-tools, .row-tools-add{ display:none !important; }</style>").appendTo("head");
+		// check if the propertyeditor gridlocker is on that contenttype
+		function verifyLock()
+		{
+			if (editorState != null && editorState.current != null) {
+				for (var i in editorState.current.tabs) {
+					var tab = editorState.current.tabs[i];
+					for (var j in tab.properties) {
+						var property = tab.properties[j]
+						if (property != null && property.editor != null && property.editor === editorAlias) {
+							authResource.getCurrentUser().then(function (user) {
+								if (allowedUsers.indexOf(user.name) == -1) {
+									lockGrid();
+								}
+							});
 						}
-					});
+					}
 				}
-			});
-		} else {
-			//console.log("wrong section")
+			}
 		}
-	});
-}]);
+
+		function lockGrid() {
+			$('<link href="' + stylesheet + '" rel="stylesheet" type="text/css" id="GridLocker" />').appendTo("head");
+		}
+
+		function unlockGrid() {
+			$('#GridLocker').remove();
+		}
+
+		// if we are leaving the node, the locker will be removed to unlock the others
+		$rootScope.$on('$viewContentLoaded', function () {
+			unlockGrid();
+		});
+
+		if ($scope.model.config && $scope.model.config.allowedUsers && $scope.model.config.allowedUsers != "") {
+			allowedUsers = $scope.model.config.allowedUsers;
+		}
+
+		// unlock anyway
+		verifyLock();
+		unlockGrid();
+});

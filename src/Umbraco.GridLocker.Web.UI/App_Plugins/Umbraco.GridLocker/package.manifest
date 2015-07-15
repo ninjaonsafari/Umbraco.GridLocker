@@ -1,4 +1,21 @@
 ﻿{
+	propertyEditors: [
+		{
+			alias: "GridLocker",
+			name: "Umbraco.GridLocker",
+			editor: {
+				view: "~/App_Plugins/Umbraco.GridLocker/Umbraco.GridLocker.html"
+			},
+			prevalues: {
+				fields: [{
+					label: "Usernames",
+					description: "usernames comma separated",
+					key: "allowedUsers",
+					view: "textstring"
+				}]
+			}
+		}
+	],
 	"javascript" : [
 		'~/App_Plugins/Umbraco.GridLocker/Umbraco.GridLocker.js'
 	]

@@ -1,0 +1,12 @@
+﻿body {
+}
+
+
+.templates-preview,
+.cell-tools-add,
+.cell-tools,
+.row-tools,
+.row-tools-add {
+	display:none !important;
+
+}

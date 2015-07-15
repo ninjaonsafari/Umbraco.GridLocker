@@ -174,3 +174,5 @@ Temporary Items
 **/Css/main.css
 **/Css/main.min.css
 **/Css/main.css.map
+
+src/Umbraco.GridLocker.Web/

@@ -19,7 +19,7 @@ module.exports = function (grunt) {
 		umbracoPackage: {
 			options: {
 				name: "Umbraco.GridLocker",
-				version: '1.0.0.0',
+				version: '1.0.0.1',
 				url: 'https://github.com/ninjaonsafari/Umbraco.GridLocker',
 				license: 'MIT',
 				licenseUrl: 'http://opensource.org/licenses/MIT',
