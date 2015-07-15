@@ -51,9 +51,6 @@ obj
 **/App_Browsers/
 **/umbraco_client/
 
-**/App_Plugins/
-**/App_Plugins
-
 # ignore umbraco folder but not the plugin
 # some packages are stored in there
 **/umbraco/
@@ -177,10 +174,3 @@ Temporary Items
 **/Css/main.css
 **/Css/main.min.css
 **/Css/main.css.map
-
-
-# Project #
-###########
-
-/Opten.Umbraco.Web.UI
-/Opten.Umbraco.Web.UI/App_Plugins/
